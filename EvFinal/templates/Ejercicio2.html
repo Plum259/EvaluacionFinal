@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inicio de sesión</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="usuario">Ingresa tu nombre: </label>
+                <input type="text" name="usuario" required><br>
+            </div>
+            <div>
+                <label for="contraseña">Ingresa tu contraseña: </label>
+                <input type="text" name="contraseña" required><br>
+            </div>
+            <div>
+                <br>
+                <input type="submit" value="Verificar">
+            </div>
+        </form>
+        {% if frase %}
+        <div>
+            <p>{{frase}}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
